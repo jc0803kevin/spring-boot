@@ -9,6 +9,9 @@
 	<packaging>pom</packaging>
 	<name>Spring Boot Build</name>
 	<description>Spring Boot Build</description>
+	<modules>
+		<module>spring-boot-samples/spring-boot-demo-kevin</module>
+	</modules>
 	<properties>
 		<revision>2.0.10.BUILD-SNAPSHOT</revision>
 		<main.basedir>${basedir}</main.basedir>
@@ -29,7 +32,7 @@
 			</properties>
 			<build>
 				<plugins>
-					<plugin>
+					<!--<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-checkstyle-plugin</artifactId>
 						<version>3.0.0</version>
@@ -85,8 +88,8 @@
 								<inherited>false</inherited>
 							</execution>
 						</executions>
-					</plugin>
-					<plugin>
+					</plugin>-->
+					<!--<plugin>
 						<groupId>io.spring.javaformat</groupId>
 						<artifactId>spring-javaformat-maven-plugin</artifactId>
 						<version>${spring-javaformat.version}</version>
@@ -101,7 +104,7 @@
 								</goals>
 							</execution>
 						</executions>
-					</plugin>
+					</plugin>-->
 				</plugins>
 			</build>
 			<modules>
@@ -217,7 +220,7 @@
 			<plugins>
 				<!--This plugin's configuration is used to store Eclipse m2e settings
 					only. It has no influence on the Maven build itself. -->
-				<plugin>
+				<!--<plugin>
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
 					<version>1.0.0</version>
@@ -233,7 +236,7 @@
 											kotlin-maven-plugin
 										</artifactId>
 										<versionRange>
-											[1.1.51,)
+											[1.6.21,)
 										</versionRange>
 										<goals>
 											<goal>compile</goal>
@@ -247,7 +250,7 @@
 							</pluginExecutions>
 						</lifecycleMappingMetadata>
 					</configuration>
-				</plugin>
+				</plugin>-->
 			</plugins>
 		</pluginManagement>
 	</build>
